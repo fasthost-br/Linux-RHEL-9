@@ -1,14 +1,16 @@
 ##
-## [EN] Important: This is not a auto-executing shell, its just a step-by-step guide.
-## [PT] Importante: Isso não é um script de auto-execução, e sim um passo-a-passo comentado.
+## ! [EN] The FastHost company (https://fasthost.com.br) gives all these guides free of charges.
+## ! But we cant be responsable about any error and/or problem that the commands here can cause.
+## ! Use it on your own risk.
+## 
+## ! [PT] A empresa FastHost (https://fasthost.com.br) disponibiliza este guia de forma gratuita.
+## ! Não nos responsabilizamos por qualquer erro e/ou problema que os comandos possam acarretar.
+## ! Use isto por sua conta e risco.
+## 
+## [EN] Title: MongoDB Uninstall Guide for AlmaLinux/Rockylinux/CentOS 9.x
+## [PT] Título: Guia para Desinstalação do Servidor MongoDB para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [ALL] Created by: Marcelo Pavan (marcelopavan).
-## [ALL] Operational system: Almalinux 9.x.
-##
-## [EN] Description: Uninstall Guide.
-## [PT] Descrição: Guia de Desinstalação.
-##
-## [ALL] MongoDB version: 7.x
+## [ALL] MongoDB version: 7.x (stable)
 ##
 
 ## [EN] Shutdown and disable the auto-init.
