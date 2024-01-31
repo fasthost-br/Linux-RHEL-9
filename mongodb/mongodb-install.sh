@@ -42,7 +42,7 @@ use admin
 ## [PT] Cria um novo super-usuário. [!!!] Altere o "USER" e a senha será solicitada, insira uma díficil e sem símbolos.
 db.createUser(
     {
-        user: "marcelorp",
+        user: "USER",
         pwd: passwordPrompt(),
         roles: [ 
             { role: "userAdminAnyDatabase", db: "admin" },
