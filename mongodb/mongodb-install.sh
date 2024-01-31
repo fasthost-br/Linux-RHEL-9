@@ -55,16 +55,11 @@ db.createUser(
 ## [PT] Saindo da database
 exit
 
-## [EN] Enabling the authentication.
-## [PT] Habilitando a autenticação.
-echo 'security:
-  authorization: enabled' >> /etc/mongod.conf
-
 ## [EN] Restart the service.
 ## [PT] Reinicia o serviço.
 systemctl restart mongod
 
-## [EN] That is all, now your database is listening on localhost:27017, for internal application dont need to open that port on FirewallD (most of case).
-## [PT] Isso é tudo, agora seu banco de dados está respondendo em localhost:27017, para aplicações internas não precisará abrir a porta no FirewallD (maioria dos casos).
+## [EN] Please, read the MongoDB docs, and the mongod.conf (on this repo) to understand how to change the settings.
+## [PT] Por favor, leia a documentação do MongoDB, e o arquivo mongod.conf (deste repo) para entender como alterar alguns parâmetros.
 
 ## [ALL] End
