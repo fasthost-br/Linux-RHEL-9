@@ -5,8 +5,10 @@
 ## [ALL] Created by: Marcelo Pavan (marcelopavan).
 ## [ALL] Operational system: Almalinux 9.x.
 ##
-## [EN] Description: MongoDB Installaton Guide.
-## [PT] Descrição: Guia de Instalação do MongoDB.
+## [EN] Description: Installaton Guide.
+## [PT] Descrição: Guia de Instalação.
+##
+## [ALL] MongoDB version: 7.x
 ##
 
 ## [EN] Create the new official repository for download.
@@ -18,32 +20,29 @@ gpgcheck=1
 enabled=1
 gpgkey=https://pgp.mongodb.com/server-7.0.asc' >> /etc/yum.repo.d/mongodb.repo
 
-## [EN] Clean all cache files from YUM command.
-## [PT] Limpa todos os caches do comando YUM.
+## [EN] Clean all cache files from yum command.
+## [PT] Limpa todos os caches do comando yum.
 yum clean all
 
 ## [EN] Install the MongoDB package.
 ## [PT] Instala o pacote MongoDB.
 yum install -y mongodb-org
 
-## [EN] Init the MongoDB service, default port listening: 27017.
-## [PT] Inicializa o serviço do MongoDB, porta padrão de uso: 27017.
+## [EN] Start and enable the auto-startup. Default port: 27017.
+## [PT] Inicia e habilita a auto-inicialização. Porta padrão: 27017.
 systemctl start mongod
-
-## [EN] Enable the auto-init on system startup.
-## [PT] Habilita a inicialização automática junto com o sistema.
 systemctl enable mongod
 
-## [EN] Makes the login on the local database, to start commands.
-## [PT] Faz o login no banco de dados local, para iniciar os comandos.
+## [EN] Makes the login and ask for admin usage.
+## [PT] Realiza o login e solicita o uso de admin.
 mongosh --port 27017
-
-## [EN] Create the new super-user for database administration. [!!!] USER present here, change to your desired username.
-## [PT] Cria um novo super-usuário para adminsitração do banco de dados. [!!!] USER está presente aqui, altere para o usuário desejado.
 use admin
+
+## [EN] Create a new super-user. [!!!] Change the "USER" and a new password will be prompted, create a medium one without symbols.
+## [PT] Cria um novo super-usuário. [!!!] Altere o "USER" e a senha será solicitada, insira uma díficil e sem símbolos.
 db.createUser(
     {
-        user: "USER",
+        user: "marcelorp",
         pwd: passwordPrompt(),
         roles: [ 
             { role: "userAdminAnyDatabase", db: "admin" },
@@ -51,5 +50,21 @@ db.createUser(
         ]
     }
 )
+
+## [EN] Exit from database
+## [PT] Saindo da database
+exit
+
+## [EN] Enabling the authentication.
+## [PT] Habilitando a autenticação.
+echo 'security:
+  authorization: enabled' >> /etc/mongod.conf
+
+## [EN] Restart the service.
+## [PT] Reinicia o serviço.
+systemctl restart mongod
+
+## [EN] That is all, now your database is listening on localhost:27017, for internal application dont need to open that port on FirewallD (most of case).
+## [PT] Isso é tudo, agora seu banco de dados está respondendo em localhost:27017, para aplicações internas não precisará abrir a porta no FirewallD (maioria dos casos).
 
 ## [ALL] End
