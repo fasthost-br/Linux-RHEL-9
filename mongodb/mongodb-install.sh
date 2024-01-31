@@ -40,11 +40,11 @@ systemctl enable mongod
 mongosh --port 27017
 use admin
 
-## [EN] Create a new super-user. [!!!] Change the "USER" and a new password will be prompted, create a medium one without symbols.
-## [PT] Cria um novo super-usuário. [!!!] Altere o "USER" e a senha será solicitada, insira uma díficil e sem símbolos.
+## [EN] Create a new super-user. [!!!] Change the "CHANGE-USER" and a new password will be prompted, create a good withou and I would avoid to use symbols.
+## [PT] Cria um novo super-usuário. [!!!] Altere o "CHANGE-USER" e a senha será solicitada, insira uma díficil e eu evitaria a utilização de símbolos.
 db.createUser(
     {
-        user: "USER",
+        user: "CHANGE-USER",
         pwd: passwordPrompt(),
         roles: [ 
             { role: "userAdminAnyDatabase", db: "admin" },
@@ -61,7 +61,7 @@ exit
 ## [PT] Reinicia o serviço.
 systemctl restart mongod
 
-## [EN] Please, read the MongoDB docs, and the mongod.conf (on this repo) to understand how to change the settings.
-## [PT] Por favor, leia a documentação do MongoDB, e o arquivo mongod.conf (deste repo) para entender como alterar alguns parâmetros.
+## [EN] Please, read the MongoDB docs, and the mongod.conf.default (on this repo) to understand how to change the settings.
+## [PT] Por favor, leia a documentação do MongoDB, e o arquivo mongod.conf.default (deste repo) para entender como alterar alguns parâmetros.
 
 ## [ALL] End.
