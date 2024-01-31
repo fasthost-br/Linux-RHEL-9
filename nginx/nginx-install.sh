@@ -1,3 +1,4 @@
+##
 ## ! [EN] The FastHost company (https://fasthost.com.br) gives all these guides free of charges.
 ## ! But we cant be responsable about any error and/or problem that the commands here can cause.
 ## ! Use it on your own risk.
