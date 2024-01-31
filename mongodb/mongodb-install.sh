@@ -24,8 +24,8 @@ gpgkey=https://pgp.mongodb.com/server-7.0.asc' >> /etc/yum.repo.d/mongodb.repo
 ## [PT] Limpa todos os caches do comando yum.
 yum clean all
 
-## [EN] Install the MongoDB package.
-## [PT] Instala o pacote MongoDB.
+## [EN] Install the package.
+## [PT] Instala o pacote.
 yum install -y mongodb-org
 
 ## [EN] Start and enable the auto-startup. Default port: 27017.
@@ -51,8 +51,8 @@ db.createUser(
     }
 )
 
-## [EN] Exit from database
-## [PT] Saindo da database
+## [EN] Exit from database.
+## [PT] Saindo da database.
 exit
 
 ## [EN] Restart the service.
@@ -62,4 +62,4 @@ systemctl restart mongod
 ## [EN] Please, read the MongoDB docs, and the mongod.conf (on this repo) to understand how to change the settings.
 ## [PT] Por favor, leia a documentação do MongoDB, e o arquivo mongod.conf (deste repo) para entender como alterar alguns parâmetros.
 
-## [ALL] End
+## [ALL] End.
