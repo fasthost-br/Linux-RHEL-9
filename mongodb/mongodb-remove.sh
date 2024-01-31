@@ -10,7 +10,7 @@
 ## [EN] Title: MongoDB Uninstall Guide for AlmaLinux/Rockylinux/CentOS 9.x
 ## [PT] Título: Guia para Desinstalação do Servidor MongoDB para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [ALL] MongoDB version: 7.x (stable)
+## [ALL] MongoDB version: 7.x (stable).
 ##
 
 ## [EN] Shutdown and disable the auto-init.
@@ -30,4 +30,4 @@ rm -rf /tmp/mongodb-27017.sock
 ## [PT] Remove o pacote. [!!!] Por favor, verifique as dependências que serão desinstaladas junto.
 yum remove -y mongodb-org
 
-## [ALL] End
+## [ALL] End.
