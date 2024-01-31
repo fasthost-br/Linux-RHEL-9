@@ -42,11 +42,4 @@ yum install -y nginx
 systemctl start nginx
 systemctl enable nginx
 
-
-
-
-## [EN] Restart the service.
-## [PT] Reinicia o serviço.
-systemctl restart mongod
-
-## [ALL] End
+## [ALL] End.
