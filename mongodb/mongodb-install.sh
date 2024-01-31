@@ -10,7 +10,7 @@
 ## [EN] Title: MongoDB Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
 ## [PT] Título: Guia para Instalação do Servidor MongoDB para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [ALL] MongoDB version: 7.x (stable)
+## [ALL] MongoDB version: 7.x (stable).
 ##
 
 ## [EN] Create the new official repository for download.
