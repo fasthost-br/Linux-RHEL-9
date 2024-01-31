@@ -10,7 +10,7 @@
 ## [EN] Title: Nginx Server Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
 ## [PT] Título: Guia para Instalação do Servidor Nginx para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [ALL] Nginx version: 1.24.x (stable)
+## [ALL] Nginx version: 1.24.x (stable).
 ##
 
 ## [EN] Create the new official repository for download.
