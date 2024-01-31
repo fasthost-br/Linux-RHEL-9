@@ -40,11 +40,11 @@ systemctl enable mongod
 mongosh --port 27017
 use admin
 
-## [EN] Create a new super-user. [!!!] Change the "CHANGE-USER" and a new password will be prompted, create a good withou and I would avoid to use symbols.
-## [PT] Cria um novo super-usuário. [!!!] Altere o "CHANGE-USER" e a senha será solicitada, insira uma díficil e eu evitaria a utilização de símbolos.
+## [EN] Create a new super-user. [!!!] Change the "CHANGE_USER" and a new password will be prompted, create a good withou and I would avoid to use symbols.
+## [PT] Cria um novo super-usuário. [!!!] Altere o "CHANGE_USER" e a senha será solicitada, insira uma díficil e eu evitaria a utilização de símbolos.
 db.createUser(
     {
-        user: "CHANGE-USER",
+        user: "CHANGE_USER",
         pwd: passwordPrompt(),
         roles: [ 
             { role: "userAdminAnyDatabase", db: "admin" },
