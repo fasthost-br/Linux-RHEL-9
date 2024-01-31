@@ -22,8 +22,8 @@ systemctl disable mongod
 ## [PT] Remove todas as pastas de logs e data.
 rm -rf /var/lib/mongo /var/log/mongodb
 
-## [EN] Remove the sock file.
-## [PT] Remove o arquivo sock.
+## [EN] Remove the sock file, if exists.
+## [PT] Remove o arquivo sock, se existir.
 rm -rf /tmp/mongodb-27017.sock
 
 ## [EN] Remove the package. [!!!] Please, check the dependencies that will be removed together.
