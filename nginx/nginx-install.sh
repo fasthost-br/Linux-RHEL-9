@@ -1,14 +1,15 @@
+## ! [EN] The FastHost company (https://fasthost.com.br) gives all these guides free of charges.
+## ! But we cant be responsable about any error and/or problem that the commands here can cause.
+## ! Use it on your own risk.
+## 
+## ! [PT] A empresa FastHost (https://fasthost.com.br) disponibiliza este guia de forma gratuita.
+## ! Não nos responsabilizamos por qualquer erro e/ou problema que os comandos possam acarretar.
+## ! Use isto por sua conta e risco.
+## 
+## [EN] Title: Nginx Server Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
+## [PT] Título: Guia para Instalação do Servidor Nginx para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [EN] Important: This is not a auto-executing shell, its just a step-by-step guide.
-## [PT] Importante: Isso não é um script de auto-execução, e sim um passo-a-passo comentado.
-##
-## [ALL] Created by: Marcelo Pavan (marcelopavan).
-## [ALL] Operational system: Almalinux 9.x.
-##
-## [EN] Description: Installaton Guide.
-## [PT] Descrição: Guia de Instalação.
-##
-## [ALL] Nginx version: 1.24.x
+## [ALL] Nginx version: 1.24.x (stable)
 ##
 
 ## [EN] Create the new official repository for download.
