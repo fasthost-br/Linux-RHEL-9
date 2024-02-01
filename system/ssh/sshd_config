@@ -10,7 +10,7 @@
 
 ## [EN] Port to connect into SSH, don't forget to open the port on Firewall and SELinux.
 ## [PT] Porta para conexão com o SSH, não esqueça de abrir a porta no Firewall e SELinux.
-Port 7555
+Port 7858
 
 ## [EN] Others configurations will be commented in front of each setting in English.
 ## [PT] Outras configurações serão comentadas em frente a cada linha, em Inglês.
