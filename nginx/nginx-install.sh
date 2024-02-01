@@ -7,29 +7,15 @@
 ## ! Não nos responsabilizamos por qualquer erro e/ou problema que os comandos possam acarretar.
 ## ! Use isto por sua conta e risco.
 ## 
-## [EN] Title: Nginx Server Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
-## [PT] Título: Guia para Instalação do Servidor Nginx para AlmaLinux/Rockylinux/CentOS 9.x
+## [EN] Title: Nginx Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
+## [PT] Título: Guia para Instalação do Nginx para AlmaLinux/Rockylinux/CentOS 9.x
 ##
 ## [ALL] Nginx version: 1.24.x (stable).
 ##
 
 ## [EN] Create the new official repository for download.
 ## [PT] Cria o novo repositório oficial para download.
-echo '[nginx-stable]
-name=nginx stable repo
-baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
-gpgcheck=1
-enabled=1
-gpgkey=https://nginx.org/keys/nginx_signing.key
-module_hotfixes=true
-
-[nginx-mainline]
-name=nginx mainline repo
-baseurl=http://nginx.org/packages/mainline/centos/$releasever/$basearch/
-gpgcheck=1
-enabled=0
-gpgkey=https://nginx.org/keys/nginx_signing.key
-module_hotfixes=true' >> /etc/yum.repo.d/nginx.repo
+wget https://raw.githubusercontent.com/fasthost-br/Linux-RHEL-9/main/nginx/nginx.repo -O /etc/yum.repos.d/nginx.repo
 
 ## [EN] Clean all cache files from yum command.
 ## [PT] Limpa todos os caches do comando yum.

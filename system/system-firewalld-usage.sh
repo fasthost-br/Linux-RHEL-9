@@ -7,14 +7,9 @@
 ## ! Não nos responsabilizamos por qualquer erro e/ou problema que os comandos possam acarretar.
 ## ! Use isto por sua conta e risco.
 ## 
-## [EN] Title: Firewall Configuration Guide for AlmaLinux/Rockylinux/CentOS 9.x
-## [PT] Título: Guia de Configuração do Firewall para AlmaLinux/Rockylinux/CentOS 9.x
+## [EN] Title: Firewall Usage Guide for AlmaLinux/Rockylinux/CentOS 9.x
+## [PT] Título: Guia de Utilização do Firewall para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-
-## [EN] How to completly disable the Firewall.
-## [PT] Como desativar completamente o Firewall.
-systemctl stop firewalld
-systemctl disable firewalld
 
 ## [EN] How to enable the Firewall.
 ## [PT] Como habilitar o Firewall.
