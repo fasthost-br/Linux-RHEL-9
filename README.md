@@ -39,17 +39,18 @@ _Portuguese_
 > Qualquer dúvida e/ou problema que tiver, pode entrar em contato via **_github@fasthost.com.br_**
 
 ## Packages availables and tested:
-- [ ] :red_circle: MongoDB
-- [ ] :red_circle: MariaDB
-- [ ] :red_circle: PostgreSQL
-- [ ] :red_circle: Nginx
-- [ ] :red_circle: Certbot
-- [ ] :red_circle: Certbot Cloudflare
-- [ ] :red_circle: Redis
-- [ ] :red_circle: RabbitMQ
-- [ ] :red_circle: NodeJS
-- [ ] :red_circle: PM2 (node)
-- [ ] :red_circle: NVM (node)
-- [ ] :red_circle: FirewallD (configuração)
-- [ ] :red_circle: SELinux (desabilitar)
-- [ ] :red_circle: AAPanel
+- [X] :green_circle: [MongoDB](mongodb/)
+- [ ] :red_circle: [MariaDB](mariadb/)
+- [ ] :red_circle: [PostgreSQL](postgresql/)
+- [ ] :red_circle: [Nginx](nginx/)
+- [ ] :red_circle: [Certbot](certbot/)
+- [ ] :red_circle: [Certbot DNS Cloudflare](certbot/certbot-cloudflare-install.sh)
+- [ ] :red_circle: [Redis](redis/)
+- [ ] :red_circle: [RabbitMQ](rabbitmq/)
+- [ ] :red_circle: [NodeJS](nodejs/)
+- [ ] :red_circle: [PM2 (node)](nodejs/nodejs-pm2-install.sh)
+- [ ] :red_circle: [NVM (node)](nodejs/nodejs-nvm-install.sh)
+- [ ] :red_circle: [FirewallD (configuração)](system/system-firewalld.sh)
+- [ ] :red_circle: [SELinux (desabilitar)](system/system-selinux.sh)
+- [ ] :red_circle: [SSH](system/system-ssh.sh)
+- [ ] :red_circle: [AAPanel](aapanel/)
