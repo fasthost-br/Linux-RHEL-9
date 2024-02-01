@@ -1,0 +1,82 @@
+##
+## ! [EN] The FastHost company (https://fasthost.com.br) gives all these guides free of charges.
+## ! But we cant be responsable about any error and/or problem that the commands here can cause.
+## ! Use it on your own risk.
+## 
+## ! [PT] A empresa FastHost (https://fasthost.com.br) disponibiliza este guia de forma gratuita.
+## ! Não nos responsabilizamos por qualquer erro e/ou problema que os comandos possam acarretar.
+## ! Use isto por sua conta e risco.
+## 
+
+## [EN] Port to connect into SSH, don't forget to open the port on Firewall and SELinux.
+## [PT] Porta para conexão com o SSH, não esqueça de abrir a porta no Firewall e SELinux.
+Port 7555
+
+## [EN] Others configurations will be commented in front of each setting in English.
+## [PT] Outras configurações serão comentadas em frente a cada linha, em Inglês.
+
+## [ALL] Connection
+AddressFamily inet                          # inet = only IPV4 || any = IPV4 and IPV6 || inet6 = only IPV6 || Default = any
+
+## [ALL] Log
+SyslogFacility AUTH                         # AUTH = will log information into syslog || Default = AUTH
+LogLevel INFO                               # INFO = will log information messages || DEBUG = will log debug information from connections || Default = INFO
+
+## [ALL] User restriction
+AllowUsers root SSH_USER                    # restrict the login to root and your new created user || Default = none
+PermitRootLogin prohibit-password           # yes/no = permit or not the root login || prohibit-password = will force public key authentication || Default = yes
+StrictModes yes                             # check file modes and ownership of the user's files and home directory before accepting login || Default = yes
+
+## [ALL] Public-key authentication
+PubkeyAuthentication yes                    # public key authentication is allowed || Default = yes
+AuthorizedKeysFile .ssh/authorized_keys     # path where the authorized_keys will be stored (chmod 600) || Default = .ssh/authorized_keys
+
+## [ALL] Others authentication methods
+PasswordAuthentication no                   # allow simple password usage, disable to use public key || Default = yes
+PermitEmptyPasswords no                     # disable tunneled clear text passwords || Default = no
+KbdInteractiveAuthentication no             # allow keyboard-interactive authentication || Default = yes
+KerberosAuthentication no                   # allow the password be validated through the Kerberos KDC || Default = no
+GSSAPIAuthentication no                     # allow the authentication based on GSSAPI || Default = no
+UsePAM yes                                  # enable PAM authentication, set to "no" on RHEL is not supported || Default = yes
+
+## [ALL] Host authentication
+HostbasedAuthentication no                  # enable or not the host-based authentication || Default = no.
+IgnoreUserKnownHosts yes                    # dont read the users  ~/.ssh/known_hosts for host-based authentication || Default = no
+IgnoreRhosts yes                            # dont read the users ~/.rhosts and ~/.shosts files || Default = yes
+
+## [ALL] Brute-force protection
+LoginGraceTime 1m                           # connection will be loss if more than 1 minute inactive || Default = 2m
+MaxAuthTries 4                              # maximum number of authentication attempts permitted per connection || Default = 6
+MaxSessions 5                               # maximum number of open sessions permitted per network connection || Default = 10
+MaxStartups 10:30:60                        # maximum number of concurrent unauthenticated connections to the SSH daemon || Default = 10
+                                                # > 10: Number of unauthenticated connections before we start dropping.
+                                                # > 30: Percentage chance of dropping once we reach 10 (increases linearly for more than 10).
+                                                # > 60: Maximum number of connections at which we start dropping everything.
+                                                # > Increase here if you use your VPS or Dedicated as a service provider, as you will have much more connections at same time.
+
+## [ALL] Connection Keep-alive
+TCPKeepAlive no                             # enable the TCP Keep Alive check || Default = no
+ClientAliveInterval 900                     # interval in seconds after which no data received the server will send a request to check response from client || Default = 0
+ClientAliveCountMax 5                       # max of tries from server keep alive check without message before closing the connection || Default = 3 
+
+## [ALL] Others configurations.
+## [!!!] I really adivice to not change anything here. Read the documentation before.
+AllowAgentForwarding yes
+AllowTcpForwarding yes
+GatewayPorts no
+X11Forwarding no
+X11DisplayOffset 10
+X11UseLocalhost yes
+PermitTTY yes
+PrintMotd no
+PrintLastLog yes
+PermitUserEnvironment no
+Compression yes
+UseDNS no
+PidFile /var/run/sshd.pid
+PermitTunnel no
+
+# [ALL] Override default of no subsystems.
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+## [ALL] End.
