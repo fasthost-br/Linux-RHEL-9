@@ -10,20 +10,8 @@
 ## [EN] Title: NodeJS Installation Guide for AlmaLinux/Rockylinux/CentOS 9.x
 ## [PT] Título: Guia para Instalação do NodeJS para AlmaLinux/Rockylinux/CentOS 9.x
 ##
-## [ALL] NodeJS version: 20.x (stable).
+## [ALL] PM2 version: 5.3.1
 ##
-
-## [EN] Install the yum-utils for yum command.
-## [PT] Instala o pacote yum-utils para o comando yum.
-yum install -y yum-utils wget
-
-## [EN] Enable the version 20.x repository
-## [PT] Habilita o repositório da versão 20.x
-yum module enable -y nodejs:20
-
-## [EN] Create the new official repository for download.
-## [PT] Cria o novo repositório oficial para download.
-yum install -y nodejs
 
 ## [EN] Install PM2 for process management.
 ## [PT] Instala o PM2 para o gerenciamento de processo.
