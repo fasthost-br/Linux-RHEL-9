@@ -39,22 +39,22 @@ _Portuguese_
 > Qualquer dúvida e/ou problema que tiver, pode entrar em contato via **_github@fasthost.com.br_**
 
 ## Packages availables and tested:
-- [X] :green_circle: [MongoDB](mongodb/) (Install/Usage/Uninstall)
+- [X] :green_circle: [MongoDB](mongodb/) _(Install/Usage/Uninstall)_
 - [ ] :red_circle: [MariaDB](mariadb/)
-- [X] :green_circle: [PostgreSQL](postgresql/) (Install/Usage/Uninstall)
-- [X] :green_circle: [Nginx](nginx/) (Install/Usage/Uninstall)
-- [ ] :red_circle: [Certbot](certbot/certbot.sh) (Install/Usage)
-- [ ] :red_circle: [Certbot (DNS Cloudflare)](certbot/certbot-dns-cloudflare.sh) (Install/Usage)
+- [X] :green_circle: [PostgreSQL](postgresql/) _(Install/Usage/Uninstall)_
+- [X] :green_circle: [Nginx](nginx/) _(Install/Usage/Uninstall)_
+- [ ] :red_circle: [Certbot](certbot/certbot.sh) _(Install/Usage)_
+- [ ] :red_circle: [Certbot (DNS Cloudflare)](certbot/certbot-dns-cloudflare.sh) _(Install/Usage)_
 - [ ] :red_circle: [Redis](redis/)
 - [ ] :red_circle: [RabbitMQ](rabbitmq/)
-- [X] :green_circle: [NodeJS](nodejs/nodejs-install.sh) (Install)
-- [X] :green_circle: [NPM (NodeJS)](nodejs/npm-upgrade.sh) (Upgrade)
-- [X] :green_circle: [PM2 (NodeJS)](nodejs/pm2-install.sh) (Install)
-- [X] :green_circle: [NVM (NodeJS)](nodejs/nvm-install.sh) (Install)
-- [X] :green_circle: [FirewallD](system/system-firewalld-disable.sh) (Disable)
-- [X] :green_circle: [FirewallD](system/system-firewalld-usage.sh) (Usage)
-- [X] :green_circle: [SELinux](system/system-selinux-disable.sh) (Disable)
-- [X] :green_circle: [SELinux](system/system-selinux-usage.sh) (Usage)
-- [X] :green_circle: [SSH](system/system-ssh-config.sh) (Config)
-- [X] :green_circle: [SSH](system/system-ssh-recover.sh) (Recover)
+- [X] :green_circle: [NodeJS](nodejs/nodejs-install.sh) _(Install)_
+- [X] :green_circle: [NPM (NodeJS)](nodejs/npm-upgrade.sh) _(Upgrade)_
+- [X] :green_circle: [PM2 (NodeJS)](nodejs/pm2-install.sh) _(Install)_
+- [X] :green_circle: [NVM (NodeJS)](nodejs/nvm-install.sh) _(Install)_
+- [X] :green_circle: [FirewallD](system/system-firewalld-disable.sh) _(Disable)_
+- [X] :green_circle: [FirewallD](system/system-firewalld-usage.sh) _(Usage)_
+- [X] :green_circle: [SELinux](system/system-selinux-disable.sh) _(Disable)_
+- [X] :green_circle: [SELinux](system/system-selinux-usage.sh) _(Usage)_
+- [X] :green_circle: [SSH](system/system-ssh-config.sh) _(Config)_
+- [X] :green_circle: [SSH](system/system-ssh-recover.sh) _(Recover)_
 - [ ] :red_circle: [AAPanel](aapanel/)
